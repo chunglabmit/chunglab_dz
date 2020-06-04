@@ -1,0 +1,202 @@
+[
+  {
+    "axes": "xy",
+    "plane": 40,
+    "name": "sagittal/images/sagittal_040.dzi"
+  },
+  {
+    "axes": "xy",
+    "plane": 61,
+    "name": "sagittal/images/sagittal_061.dzi"
+  },
+  {
+    "axes": "xy",
+    "plane": 82,
+    "name": "sagittal/images/sagittal_082.dzi"
+  },
+  {
+    "axes": "xy",
+    "plane": 103,
+    "name": "sagittal/images/sagittal_103.dzi"
+  },
+  {
+    "axes": "xy",
+    "plane": 124,
+    "name": "sagittal/images/sagittal_124.dzi"
+  },
+  {
+    "axes": "xy",
+    "plane": 145,
+    "name": "sagittal/images/sagittal_145.dzi"
+  },
+  {
+    "axes": "xy",
+    "plane": 166,
+    "name": "sagittal/images/sagittal_166.dzi"
+  },
+  {
+    "axes": "xy",
+    "plane": 187,
+    "name": "sagittal/images/sagittal_187.dzi"
+  },
+  {
+    "axes": "xy",
+    "plane": 208,
+    "name": "sagittal/images/sagittal_208.dzi"
+  },
+  {
+    "axes": "xy",
+    "plane": 229,
+    "name": "sagittal/images/sagittal_229.dzi"
+  },
+  {
+    "axes": "xy",
+    "plane": 250,
+    "name": "sagittal/images/sagittal_250.dzi"
+  },
+  {
+    "axes": "xy",
+    "plane": 271,
+    "name": "sagittal/images/sagittal_271.dzi"
+  },
+  {
+    "axes": "xy",
+    "plane": 292,
+    "name": "sagittal/images/sagittal_292.dzi"
+  },
+  {
+    "axes": "xy",
+    "plane": 313,
+    "name": "sagittal/images/sagittal_313.dzi"
+  },
+  {
+    "axes": "xy",
+    "plane": 334,
+    "name": "sagittal/images/sagittal_334.dzi"
+  },
+  {
+    "axes": "xy",
+    "plane": 355,
+    "name": "sagittal/images/sagittal_355.dzi"
+  },
+  {
+    "axes": "xy",
+    "plane": 376,
+    "name": "sagittal/images/sagittal_376.dzi"
+  },
+  {
+    "axes": "xy",
+    "plane": 397,
+    "name": "sagittal/images/sagittal_397.dzi"
+  },
+  {
+    "axes": "xy",
+    "plane": 418,
+    "name": "sagittal/images/sagittal_418.dzi"
+  },
+  {
+    "axes": "xy",
+    "plane": 439,
+    "name": "sagittal/images/sagittal_439.dzi"
+  },
+  {
+    "axes": "xz",
+    "plane": 40,
+    "name": "coronal/images/coronal_040.dzi"
+  },
+  {
+    "axes": "xz",
+    "plane": 65,
+    "name": "coronal/images/coronal_065.dzi"
+  },
+  {
+    "axes": "xz",
+    "plane": 90,
+    "name": "coronal/images/coronal_090.dzi"
+  },
+  {
+    "axes": "xz",
+    "plane": 115,
+    "name": "coronal/images/coronal_115.dzi"
+  },
+  {
+    "axes": "xz",
+    "plane": 140,
+    "name": "coronal/images/coronal_140.dzi"
+  },
+  {
+    "axes": "xz",
+    "plane": 165,
+    "name": "coronal/images/coronal_165.dzi"
+  },
+  {
+    "axes": "xz",
+    "plane": 190,
+    "name": "coronal/images/coronal_190.dzi"
+  },
+  {
+    "axes": "xz",
+    "plane": 215,
+    "name": "coronal/images/coronal_215.dzi"
+  },
+  {
+    "axes": "xz",
+    "plane": 240,
+    "name": "coronal/images/coronal_240.dzi"
+  },
+  {
+    "axes": "xz",
+    "plane": 265,
+    "name": "coronal/images/coronal_265.dzi"
+  },
+  {
+    "axes": "xz",
+    "plane": 290,
+    "name": "coronal/images/coronal_290.dzi"
+  },
+  {
+    "axes": "xz",
+    "plane": 315,
+    "name": "coronal/images/coronal_315.dzi"
+  },
+  {
+    "axes": "xz",
+    "plane": 340,
+    "name": "coronal/images/coronal_340.dzi"
+  },
+  {
+    "axes": "xz",
+    "plane": 365,
+    "name": "coronal/images/coronal_365.dzi"
+  },
+  {
+    "axes": "xz",
+    "plane": 390,
+    "name": "coronal/images/coronal_390.dzi"
+  },
+  {
+    "axes": "xz",
+    "plane": 415,
+    "name": "coronal/images/coronal_415.dzi"
+  },
+  {
+    "axes": "xz",
+    "plane": 440,
+    "name": "coronal/images/coronal_440.dzi"
+  },
+  {
+    "axes": "xz",
+    "plane": 465,
+    "name": "coronal/images/coronal_465.dzi"
+  },
+  {
+    "axes": "xz",
+    "plane": 490,
+    "name": "coronal/images/coronal_490.dzi"
+  },
+  {
+    "axes": "xz",
+    "plane": 515,
+    "name": "coronal/images/coronal_515.dzi"
+  }
+]
