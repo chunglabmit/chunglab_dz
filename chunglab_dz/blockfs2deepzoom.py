@@ -139,7 +139,7 @@ def blockfs2deepzoom(
                                    tile_format=tile_format)
             creator.create(fd.name, dest)
     else:
-        tifffile.imsave(save_file)
+        tifffile.imsave(save_file, img)
         creator = ImageCreator(tile_size=tile_size,
                                tile_overlap=tile_overlap,
                                tile_format=tile_format)
