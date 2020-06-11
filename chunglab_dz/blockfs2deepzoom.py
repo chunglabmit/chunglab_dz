@@ -81,7 +81,8 @@ def blockfs2deepzoom(
         tile_size:int=254,
         tile_overlap:int=1,
         tile_format:str="jpg",
-        clip:int=None):
+        clip:int=None,
+        save_file:str=None):
     """
     Read a plane from precomputed tif and convert to the deep zoom format
 
@@ -96,6 +97,7 @@ def blockfs2deepzoom(
     :param tile_overlap: amount of overlap between tiles
     :param tile_format: file format, e.g. "png" or "jpg"
     :param clip: high intensity clipping value
+    :param save_file: if present, save the warped image here instead of in a temporary file
     :return:
     """
     n_x = int(reference_shape[2] * magnification)
@@ -129,13 +131,19 @@ def blockfs2deepzoom(
     if clip is not None:
         img = np.clip(img, 0, clip)
     img = (img.astype(np.uint32) * 255 / img.max()).astype(np.uint8)
-    with tempfile.NamedTemporaryFile("wb", suffix=".tif") as fd:
-        tifffile.imsave(fd, img)
+    if save_file is None:
+        with tempfile.NamedTemporaryFile("wb", suffix=".tif") as fd:
+            tifffile.imsave(fd, img)
+            creator = ImageCreator(tile_size=tile_size,
+                                   tile_overlap=tile_overlap,
+                                   tile_format=tile_format)
+            creator.create(fd.name, dest)
+    else:
+        tifffile.imsave(save_file)
         creator = ImageCreator(tile_size=tile_size,
                                tile_overlap=tile_overlap,
                                tile_format=tile_format)
-        creator.create(fd.name, dest)
-
+        creator.create(save_file, dest)
 
 
 

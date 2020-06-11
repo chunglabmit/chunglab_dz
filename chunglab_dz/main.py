@@ -48,6 +48,9 @@ def argument_parser(args=sys.argv[1:]):
     parser.add_argument("--skip-if-present",
                         action="store_true",
                         help="Skip making the image files if their .dzi is present")
+    parser.add_argument("--save-file",
+                        action="store_true",
+                        help="If present, save the TIFF file using the same name as the DZI file but with different extension")
     return parser.parse_args(args)
 
 
@@ -124,10 +127,13 @@ def main(args=sys.argv[1:]):
                 destdir = os.path.dirname(dest_path)
                 if not os.path.exists(destdir):
                     os.makedirs(destdir)
+                save_file = None
+                if opts.save_file:
+                    save_file = dest[:-3] + "tiff"
                 future = pool.apply_async(
                     blockfs2deepzoom,
                     (src, dest_path, opts.alignment, reference_shape, axes, plane, magnification,
-                     tile_size, tile_overlap, tile_format, clip)
+                     tile_size, tile_overlap, tile_format, clip, save_file)
                 )
                 futures.append(future)
         for future in tqdm.tqdm(futures):
