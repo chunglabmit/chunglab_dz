@@ -129,7 +129,7 @@ def main(args=sys.argv[1:]):
                     os.makedirs(destdir)
                 save_file = None
                 if opts.save_file:
-                    save_file = dest[:-3] + "tiff"
+                    save_file = dest_path[:-3] + "tif"
                 future = pool.apply_async(
                     blockfs2deepzoom,
                     (src, dest_path, opts.alignment, reference_shape, axes, plane, magnification,
